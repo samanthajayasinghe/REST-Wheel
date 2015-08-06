@@ -1,2 +1,2 @@
-# RSET-Wheel
+# REST Wheel
 REST Api Wheel
