@@ -1,0 +1,24 @@
+{
+    "name": "samanthajayasinghe/rest-wheel",
+    "type": "library",
+    "description": "Rest Wheel for open rest apis",
+    "keywords": ["REST","api"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Samantha Jayasinghe",
+            "email": "isamantha@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.1"
+    },
+    "require": {
+        "slim/slim": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "app/src/"
+        }
+    }
+}
