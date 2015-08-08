@@ -4,7 +4,8 @@ namespace Provider\OpenWeather\Service;
 
 use Provider\OpenWeather\Model\WeatherQuery;
 
-class WeatherService {
+class WeatherService
+{
 
     public function getWeather(WeatherQuery $query)
     {

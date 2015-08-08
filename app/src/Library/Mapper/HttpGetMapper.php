@@ -1,12 +1,13 @@
 <?php
 namespace Library\Http\Mapper;
 
- use Library\Http\Query;
+use Library\Http\Query;
 
- interface HttpGetMapper {
+interface HttpGetMapper
+{
 
-     public function getEndPoint(Query $query);
+    public function getEndPoint(Query $query);
 
-     public function execute();
+    public function execute();
 
 } 

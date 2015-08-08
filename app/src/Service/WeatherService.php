@@ -1,6 +1,7 @@
 <?php
 
-class WeatherService {
+class WeatherService
+{
 
 
 } 

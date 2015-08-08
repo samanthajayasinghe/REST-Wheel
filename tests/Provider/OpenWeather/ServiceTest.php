@@ -3,7 +3,8 @@
 use Provider\OpenWeather\Service\WeatherService;
 use Provider\OpenWeather\Model\WeatherQuery;
 
-class ServiceTest extends PHPUnit_Framework_TestCase{
+class ServiceTest extends PHPUnit_Framework_TestCase
+{
 
     /**
      * @var WeatherService

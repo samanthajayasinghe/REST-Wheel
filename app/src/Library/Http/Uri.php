@@ -2,7 +2,8 @@
 
 namespace Library\Http;
 
-class Uri {
+class Uri
+{
 
     /**
      * @var string
