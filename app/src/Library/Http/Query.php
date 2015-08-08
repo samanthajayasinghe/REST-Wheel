@@ -1,6 +1,6 @@
 <?php
 namespace Library\Http;
 
-class Query {
+abstract class Query {
 
 } 
