@@ -1,7 +1,9 @@
 <?php
 namespace Provider\OpenWeather\Model;
 
-class Query {
+use Library\Http\Query;
+
+class WeatherQuery extends Query{
 
     /**
      * @var string
