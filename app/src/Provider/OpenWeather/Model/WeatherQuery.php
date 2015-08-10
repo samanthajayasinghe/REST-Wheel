@@ -6,6 +6,7 @@ use Library\Http\Query;
 class WeatherQuery extends Query
 {
 
+    const QUERY_DELIMITER = ',';
     /**
      * @var string
      */
@@ -58,7 +59,7 @@ class WeatherQuery extends Query
      */
     public function toString()
     {
-        return sprintf('%s,%s',$this->getCity(),$this->getCountry());
+        return implode(self::QUERY_DELIMITER,array_filter([$this->getCity(),$this->getCountry()]));
     }
 
 }
