@@ -53,5 +53,12 @@ class WeatherQuery extends Query
         return $this;
     }
 
+    /**
+     * @return string
+     */
+    public function toString()
+    {
+        return sprintf('%s,%s',$this->getCity(),$this->getCountry());
+    }
 
 }

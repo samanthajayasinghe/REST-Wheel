@@ -1,5 +1,5 @@
 <?php
-namespace Library\Http\Mapper;
+namespace Library\Mapper;
 
 use Library\Http\Query;
 

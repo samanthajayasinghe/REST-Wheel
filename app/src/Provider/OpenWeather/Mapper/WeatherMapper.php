@@ -2,23 +2,20 @@
 
 namespace Provider\OpenWeather\Mapper;
 
-use Library\Http\Mapper\HttpGetMapper;
+use Library\Mapper\HttpGetMapper;
 use Library\Http\Query;
 
 class WeatherMapper implements HttpGetMapper
 {
 
-
     const WEATHER_API_URI = 'api.openweathermap.org/data/2.5/weather?q=';
 
     public function getEndPoint(Query $query)
     {
-        foreach (['a', 'b'] as $i) {
-
-        }
+        return self::WEATHER_API_URI.$query->toString();
     }
 
-    public function execute($x, $y)
+    public function execute()
     {
         // TODO: Implement execute() method.
     }
