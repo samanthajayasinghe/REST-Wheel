@@ -10,33 +10,33 @@ class WeatherQueryTest extends PHPUnit_Framework_TestCase
      */
     protected $mapper = null;
 
+    protected $query = null;
+
     protected function setUp()
     {
         $this->mapper = new WeatherMapper();
+        $this->query = new WeatherQuery();
     }
 
     public function testGetEndPointWithCityAndCountry()
     {
-        $query = new WeatherQuery();
-        $query->setCity('Hamburg');
-        $query->setCountry('Germany');
-        $result = $this->mapper->getEndPoint($query);
+        $this->query->setCity('Hamburg');
+        $this->query->setCountry('Germany');
+        $result = $this->mapper->getEndPoint($this->query);
         $this->assertEquals('api.openweathermap.org/data/2.5/weather?q=Hamburg,Germany',$result);
     }
 
     public function testGetEndPointOnlyWithCity()
     {
-        $query = new WeatherQuery();
-        $query->setCity('Hamburg');
-        $result = $this->mapper->getEndPoint($query);
+        $this->query->setCity('Hamburg');
+        $result = $this->mapper->getEndPoint($this->query);
         $this->assertEquals('api.openweathermap.org/data/2.5/weather?q=Hamburg',$result);
     }
 
     public function testGetEndPointOnlyWithCountry()
     {
-        $query = new WeatherQuery();
-        $query->setCountry('Germany');
-        $result = $this->mapper->getEndPoint($query);
+        $this->query->setCountry('Germany');
+        $result = $this->mapper->getEndPoint($this->query);
         $this->assertEquals('api.openweathermap.org/data/2.5/weather?q=Germany',$result);
     }
 } 
