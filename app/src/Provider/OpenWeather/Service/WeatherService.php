@@ -2,13 +2,19 @@
 
 namespace Provider\OpenWeather\Service;
 
+use Provider\OpenWeather\Mapper\WeatherMapper;
 use Provider\OpenWeather\Model\WeatherQuery;
 
 class WeatherService
 {
 
-    public function getWeather(WeatherQuery $query)
+    public function getEndPoint(WeatherQuery $query)
     {
-        return json_encode(['1']);
+        return $this->getWeatherMapper()->getEndPoint($query);
+    }
+
+    private function getWeatherMapper()
+    {
+        return new WeatherMapper();
     }
 } 

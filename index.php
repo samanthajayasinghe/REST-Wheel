@@ -6,10 +6,11 @@ use Provider\OpenWeather\Service\WeatherService;
 use Provider\OpenWeather\Model\WeatherQuery;
 
 $app = new Slim();
-$app->get('/weather', function ($name) {
-    $query = new WeatherQuery();
-    $query->setCity('Hamburg');
-    $service = new WeatherService();
-    return $service->getWeather($query);
+$weatherService = new WeatherService();
+$query = new WeatherQuery();
+$query->setCity('Hamburg');
+
+$app->get($weatherService->getEndPoint($query), function ($response) {
+    var_dump($response);
 });
 $app->run();
