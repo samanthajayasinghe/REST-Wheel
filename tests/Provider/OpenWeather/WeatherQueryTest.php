@@ -1,9 +1,9 @@
 <?php
 
-use Provider\OpenWeather\Model\WeatherQuery;
-use Provider\OpenWeather\Mapper\WeatherMapper;
+use RestWheel\Provider\OpenWeather\Model\WeatherQuery;
+use RestWheel\Provider\OpenWeather\Mapper\WeatherMapper;
 
-class WeatherQueryTest extends PHPUnit_Framework_TestCase
+class WeatherQueryTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var WeatherMapper

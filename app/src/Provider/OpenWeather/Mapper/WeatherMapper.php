@@ -1,9 +1,9 @@
 <?php
 
-namespace Provider\OpenWeather\Mapper;
+namespace RestWheel\Provider\OpenWeather\Mapper;
 
-use Library\Mapper\HttpGetMapper;
-use Library\Http\Query;
+use RestWheel\Library\Mapper\HttpGetMapper;
+use RestWheel\Library\Http\Query;
 
 class WeatherMapper implements HttpGetMapper
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Provider\OpenWeather\Service;
+namespace RestWheel\Provider\OpenWeather\Service;
 
-use Provider\OpenWeather\Mapper\WeatherMapper;
-use Provider\OpenWeather\Model\WeatherQuery;
+use RestWheel\Provider\OpenWeather\Mapper\WeatherMapper;
+use RestWheel\Provider\OpenWeather\Model\WeatherQuery;
 
 class WeatherService
 {

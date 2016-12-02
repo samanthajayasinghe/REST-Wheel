@@ -11,15 +11,13 @@
         }
     ],
     "require": {
-        "php": ">=5.2.1"
-    },
-    "require": {
+        "php": ">=5.2.1",
         "slim/slim":"~2.0",
         "guzzlehttp/guzzle": "~6.0"
     },
     "autoload": {
-        "psr-0": {
-            "": "app/src/"
+        "psr-4": {
+            "RestWheel\\": "app/src/"
         }
     }
 }

@@ -1,7 +1,7 @@
 <?php
-namespace Library\Mapper;
+namespace RestWheel\Library\Mapper;
 
-use Library\Http\Query;
+use RestWheel\Library\Http\Query;
 
 interface HttpGetMapper
 {

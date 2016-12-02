@@ -2,8 +2,8 @@
 require 'vendor/autoload.php';
 
 use \Slim\Slim;
-use Provider\OpenWeather\Service\WeatherService;
-use Provider\OpenWeather\Model\WeatherQuery;
+use RestWheel\Provider\OpenWeather\Service\WeatherService;
+use RestWheel\Provider\OpenWeather\Model\WeatherQuery;
 
 $app = new Slim();
 $weatherService = new WeatherService();

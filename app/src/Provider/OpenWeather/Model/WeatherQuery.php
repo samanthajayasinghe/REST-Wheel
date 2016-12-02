@@ -1,7 +1,7 @@
 <?php
-namespace Provider\OpenWeather\Model;
+namespace RestWheel\Provider\OpenWeather\Model;
 
-use Library\Http\Query;
+use RestWheel\Library\Http\Query;
 
 class WeatherQuery extends Query
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Library\Http;
+namespace RestWheel\Library\Http;
 
 class Uri
 {

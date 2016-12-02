@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Library\Adapter;
+namespace RestWheel\Library\Adapter;
 
 use GuzzleHttp\Client;
 
